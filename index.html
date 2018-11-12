@@ -15,7 +15,7 @@
 				padding: 0;
 			}
 			html, body {
-				height: 100%;
+				min-height: 100%;
 			}
 			body {
 				font-family: 'Source Sans Pro', sans-serif;
@@ -25,12 +25,11 @@
 				position: relative;
 				color: #3C4048;
 				max-width: 800px;
-				margin: auto;
+				margin: 0 auto 56px;
 				padding: 24px;
 			}
-			h1, h2, blockquote, p, a {
+			h1, h2, blockquote, p {
 				margin: 0 auto 24px;
-				display: block;
 			}
 			h1, h2, blockquote, a {
 				font-weight: 700;
@@ -57,13 +56,24 @@
 			}
 			a {
 				text-decoration: none;
-				max-width: 480px;
 				text-align: center;
 				line-height: 3;
 				border-radius: 6px;
 				color: #FFF;
 				background: #009ddb;
-				margin-top: 32px;
+				margin: 0 auto;
+				display: block;
+			}
+			@media (max-width: 719px) {
+				div {
+					width: 100%;
+					border-top: 1px solid #DCE0E8;
+					background: #F6F8FA;
+					position: fixed;
+					left: 0;
+					bottom: 0;
+					padding: 16px;
+				}
 			}
 		</style>
 	</head>
@@ -83,8 +93,10 @@
 			Sob essa perspectiva, é de extrema importância que os futuros calouros saibam quais são suas opções de universidades federais. Separamos as principais delas existentes no Rio de Janeiro, Minas Gerais e São Paulo.
 		</p>
 		<p>
-			Este miniguia foi realizado como parte da disciplina <strong>Serviço de referência e fontes de informação</strong> do curso de <strong>Biblioteconomia e Ciência da Informação</strong> da <strong>UFSCAR.</strong> Baixe o guia no link abaixo:
+			Este miniguia foi realizado como parte da disciplina <strong>Serviço de referência e fontes de informação</strong> do curso de <strong>Biblioteconomia e Ciência da Informação</strong> da <strong>UFSCAR.</strong> Baixe o guia no botão abaixo:
 		</p>
-		<a target="_blank" href="Miniguia%20de%20Fontes.pdf">Miniguia de Fontes.pdf</a>
+		<div>
+			<a target="_blank" href="Miniguia%20de%20Fontes.pdf">Miniguia de Fontes.pdf</a>
+		</div>
 	</body>
 </html>
